@@ -1,0 +1,230 @@
+    /* Import fonts from google fonts*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Sofia&display=swap');
+     :root {
+        --light-gray: #2b3032a1;
+        --primary-color: #45CCD8;
+        --border: #2b303218;
+        --text-color: #ff686b;
+        --roboto: 'Roboto', sans-serif;
+        --gugi: 'Gugi', cursive;
+        --sofia: 'Sofia', cursive;
+    }
+    
+    .primary-color {
+        color: var(--primary-color);
+    }
+    
+    .bg-primary-color {
+        background: var(--primary-color) !important;
+    }
+    
+    .text-color {
+        color: var(--text-color)
+    }
+    
+    .font-roboto {
+        font-family: var(--roboto);
+    }
+    
+    .lightblue {
+        color: lightblue;
+    }
+    /* header */
+    
+    header {
+        background-color: var(--primary-color);
+        font-family: var(--roboto)
+    }
+    
+    header .site-title {
+        font-family: gugi;
+    }
+    
+    .container .dropdown-toggle,
+    .container .dropdown-item {
+        font-size: 0.7em;
+    }
+    
+    .header-link a {
+        font-size: 0.9em;
+        text-decoration: none;
+        color: #fff;
+    }
+    /* nagivation menu */
+    
+    .navbar-nav {
+        padding: 0.8em;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 0.9em;
+        color: var(--light-gray) !important;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+        padding: 0 1.3em;
+    }
+    /* archive product design */
+    
+    .custom-btn {
+        background: var(--primary-color);
+        padding: 7px 30px;
+        color: #fff;
+        text-decoration: none;
+        border: 0px solid;
+        margin: 14px 0px;
+    }
+    
+    .product-custom {
+        box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.02), 0 4.7px 5.3px rgba(0, 0, 0, 0.014), 0 8.9px 9.9px rgba(0, 0, 0, 0.012), 0 15.9px 17.6px rgba(0, 0, 0, 0.01), 0 29.7px 33px rgba(0, 0, 0, 0.008), 0 71px 79px rgba(0, 0, 0, 0.006);
+        text-align: center;
+        position: relative;
+        transition: 0.3s;
+    }
+    
+    .overlay {
+        background: rgba(0, 0, 0, 0.404);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+        padding-top: 50%;
+        border-radius: 5px;
+    }
+    
+    .overlay-icon {
+        font-size: 1.5em;
+        padding: 1em;
+        margin: 5px;
+        border-radius: 50%;
+        border: 2px solid yellowgreen;
+        color: white;
+    }
+    
+    .product-custom:hover .overlay {
+        display: block;
+    }
+    
+    .carousel-control-prev-icon.product,
+    .carousel-control-next-icon.product {
+        height: 30px;
+        width: 30px;
+        outline: black;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid black;
+        padding: 20px;
+    }
+    /* product ad section*/
+    
+    .product-ad-section {
+        margin: 70px 0;
+    }
+    
+    .ad-img-custom {
+        box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.02), 0 4.7px 5.3px rgba(0, 0, 0, 0.014), 0 8.9px 9.9px rgba(0, 0, 0, 0.012), 0 15.9px 17.6px rgba(0, 0, 0, 0.01), 0 29.7px 33px rgba(0, 0, 0, 0.008), 0 71px 79px rgba(0, 0, 0, 0.006);
+    }
+    
+    .new-arrival {
+        font-family: var(--guri);
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .divider {
+        height: 2px;
+        background: var(--light-gray);
+        margin: 0 auto;
+        width: 20%;
+        margin-bottom: 30px;
+    }
+    
+    .new-arrival-products {
+        margin-bottom: 50px;
+    }
+    
+    .custom-bg-subscribe {
+        background-image: url(img/slider/Labinaagu\ ko\ innaaka.png);
+        position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        margin-bottom: 60px;
+    }
+    
+    .subscribe-custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(10em);
+    }
+    
+    .subscribe-custom .email-input {
+        padding: 15px;
+        border-radius: 0px;
+        width: 300px;
+    }
+    
+    .subscribe-custom .submit {
+        padding: 10px;
+        border-radius: 0px;
+        width: 130px;
+        font-size: 22px;
+        font-family: var(--guri);
+    }
+    /* table product section */
+    
+    .table-product {
+        margin-bottom: 60px;
+    }
+    
+    .table-product table thead tr th,
+    .table-product table tbody tr td {
+        border: 1px solid var(--light-gray);
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .table-product table tbody tr td img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .table-product table tbody tr td a {
+        text-decoration: none;
+        color: var(--light-gray);
+    }
+    
+    .t-button {
+        background: var(--primary-color);
+        padding: 7px 25px;
+        color: white !important;
+    }
+    
+    .table-product h3 {
+        font-family: var(--guri);
+    }
+    /* footer section */
+    
+    footer {
+        background: var(--light-gray);
+        height: 450px;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer ul {
+        list-style: none;
+        font-size: 1.3em;
+        padding: 30px;
+        line-height: 2;
+        font-family: var(--roboto);
+        color: white;
+    }
+    
+    .custom-footer {
+        background: var(--light-gray);
+        padding-bottom: 10px;
+        text-align: center;
+        display: block;
+    }
